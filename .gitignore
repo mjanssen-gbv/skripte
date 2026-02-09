@@ -1,0 +1,10 @@
+# Ignore all input / output file types
+*.mrc
+*.xml
+*.pic
+*.pp
+*.out
+*.chk
+*.log
+*.txt
+*.copy
