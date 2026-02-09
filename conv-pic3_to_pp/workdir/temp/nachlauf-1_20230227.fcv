@@ -1,0 +1,40 @@
+
+_\194\152__  // Uebergehzeichen-Anfang
+_\194\156__  // uebergehzeichen-Ende
+
+si=1
+
+1=10
+ 1=13 10   // Test
+2=30
+
+#dt d~~ Z
+
+   // Kommentarzeilen entfernen
+/#
+
+  !============================================!
+  !      Keine Zeitschriften uebernehmen       !
+  !============================================!
+#002@ +- $0 b1 e1 c"b" Z
+
+#t"\29\10"
+
+## >a
+
+#+#
+
+#(a
+
+#cc +x i1,"013D" ,"_\0319_\0317gnd_" p2 P1   // 013D $9 durch $7gnd ersetzen
+  
+#cc +x i1,"017C" ,"_\0313Volltext__" ,"_\031534__" p2 P1  // 017C $3 und $5 verwerfen
+  
+#cc +x i1,"044K" ,"_\0319_\0317gnd_" p2 P1  // 044K $9 durch $7gnd ersetzen
+  
+#cc +x i1,"045Q" ,"_\0319_\0317gnd_" p2 P1  // 045Q $9 durch $7gnd ersetzen
+
+#-c
+#cc p2 P1
+#-x
+#)a

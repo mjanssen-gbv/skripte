@@ -1,0 +1,51 @@
+
+_\194\152__  // Uebergehzeichen-Anfang
+_\194\156__  // uebergehzeichen-Ende
+
+si=1
+
+1=10
+ 1=13 10   // Test
+2=30
+
+#dt d~~ Z
+
+   // Kommentarzeilen entfernen
+/#
+
+  !============================================!
+  !      Keine Zeitschriften uebernehmen       !
+  !============================================!
+#002@ +- $0 b1 e1 c"b" Z
+
+#t"\29\10"
+
+## >a
+
+#+#
+
+#(a
+
+#cc +x i1,"013D" ,"_\0319_\0317gnd_" p2 P1   // 013D $9 durch $7gnd ersetzen
+  
+#cc +x i1,"017C" ,"_\0313Volltext__" ,"_\031534__" p2 P1  // 017C $3 und $5 verwerfen
+  
+#cc +x i1,"036M" c"\0319" Z  // 036M mit $9 verwerfen, kann nicht relatiert werden
+
+#cc +x i1,"044K" ,"_\0319_\0317gnd_" p2 P1  // 044K $9 durch $7gnd ersetzen
+  
+#cc +x i1,"045Q" ,"_\0319_\0317gnd_" p2 P1  // 045Q $9 durch $7gnd ersetzen
+
+#cc +y i1,"047I" lv1 l>65500 Z   // 047I: Groesser als 65500 Zeichen: Auf 999 begrenzen
+
+#-c
+#cc p2 P1
+#-x
+#)a
+
+#-y
+#cc e999 dv2 av2   // 047I: 999 Zeichen in Var schreiben
+#uv2 c"\227\128\130" ,"_\227\128\130_|||_" dv2 av2   // Ideographischer Punkt durch Trennzeichen ersetzen
+#uv2 t"|||" dv2 av2   // Ende bei Trennzeichen
+#uv2 ,"_|||_\227\128\130_" P"\227\128\130" p2 P1   // Trennzeichen durch Ideographischer Punkt ersetzen und 047I ausgeben, wieder mit Punkt am Ende.
+#)a

@@ -1,0 +1,34 @@
+
+_\194\152__  // Uebergehzeichen-Anfang
+_\194\156__  // uebergehzeichen-Ende
+
+si=1
+
+1=10
+ 1=13 10   // Test
+2=30
+
+#dt d~~ Z
+
+   // Kommentarzeilen entfernen
+/#
+
+  !============================================!
+  !      Keine Zeitschriften uebernehmen       !
+  !============================================!
+#002@ +- $0 b1 e1 c"b" Z
+
+#t"\29\10"
+
+## >a
+
+#+#
+
+#(a
+
+#cc i1,"006X" c"^OCoLC" ,"_006X \31i_003Z \31l_" p2 P1  // erzeugt #003Z
+
+#-c
+#cc p2 P1
+#-x
+#)a

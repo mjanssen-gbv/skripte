@@ -1,0 +1,20 @@
+#
+#  File         : do_p3-to-pp.sh
+#  Description  : Convert Pica3 to PICA+ 
+#
+#  Author(s)    : Melanie Janssen
+#  Creation     : 18-10-2023
+#
+#  History:
+#  18-10-2023   : MJa      : creation
+
+Varianten:
+* pic3_to_pp - Standardumsetzung
+* pic3_to_pp_mit-nachlauf - mit Falcon Nachlauf, Parameter in workdir/nachlauf-1.fcv eintragen
+
+Anleitung
+* Pica3 Datei in Input Ordner legen
+* Aufruf: ./do_p3-to-pp.sh <Dateiname der Pica3 Datei>
+* Pica+ Datei und Validierungsergebnis liegen in Output Ordner
+
+Wichtig: Im Ordner workdir die Skripte norm_pic3.sh und pic3_to_pp nicht loeschen!
