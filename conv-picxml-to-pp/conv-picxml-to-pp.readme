@@ -1,0 +1,36 @@
+PicaXML zu Pica+:
+picadata input.pic.xml -f xml -t import > output.pica
+
+Pica+ zu PicaXML:
+picadata input.pic -f plus -t xml > output.pic.xml
+picadata input.pic -f import -t xml > output.pic.xml
+
+Beispiel:
+picadata 13.xml -f xml -t import > 13.pic
+
+# Formate
+
+PICA Plain: Zeichenumbruch vorhanden, kein ASCII 30 / RS
+	plain
+	pp
+Binäres PICA: Kein Zeichenumbruch, ASCII 30 / RS vorhanden
+	binary
+	bin
+	dat
+	extpp
+	ext
+Normalisiertes PICA: Kein Zeichenumbruch, ASCII 30 / RS vorhanden
+	plus
+	norm
+	normpp
+PICA-Importformat: Zeichenumbruch vorhanden, ASCII 30 / RS vorhanden
+	import
+PICA/JSON:
+	json
+	ndjson
+PICA/XML:
+	xml
+PPXML:
+	ppxml
+
+Quelle: https://pro4bib.github.io/pica/#/picadata
