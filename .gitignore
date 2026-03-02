@@ -2,6 +2,8 @@
 *.mrc
 *.xml
 *.pic
+*.pic3
+*.pica
 *.pp
 *.out
 *.chk
