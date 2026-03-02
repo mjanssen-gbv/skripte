@@ -1,0 +1,19 @@
+#
+#  File         : get_id_list-multi
+#  Description  : Collect ID from 001 fields of all .mrc files in Input, prompt user for praefix and prepend it, 
+#                 output one list of unique identifiers per file
+#
+#
+#  Author(s)    : Melanie Janssen
+#  Creation     : 2026-02-06
+#
+#  History:
+#  2026-02-06   : MJa      : creation
+#  2026-02-09   : MJa      : add no-prefix option
+
+Erwartete eine oder mehrere Marc Dateien im Ordner "input".
+
+Eine mögliche Nutzereingabe:
+* Präfix, der vor die ID geschrieben wird (Optional: Eingabe 'n' wenn kein Präfix)
+
+Erzeugt eine ID Liste pro Eingabedatei, die dedupliziert im Ordner "output" abgelegt werden.

@@ -1,0 +1,19 @@
+#
+#  File         : add-912
+#  Description  : Add Marc field 912 $a and $b based on user input and output a new Marc file
+#
+#
+#  Author(s)    : Melanie Janssen
+#  Creation     : 2026-01-30
+#
+#  History:
+#  2026-01-30   : MJa      : creation
+
+Erwartete eine oder mehrere Marc Dateien im Ordner "input".
+
+Drei mögliche Nutzereingaben
+* Lizenzjahr fuer 912 $b, gilt für alle zu verarbeitenden Dateien (Pflichtangabe)
+* Erstes Sigel fuer 912 $a, gilt pro Datei (Pflichtangabe)
+* Zweites Sigel fuer 912 $a, gilt pro Datei (Optional: Eingabe 'n' wenn kein weiteres Sigel)
+
+Die Marc Dateien mit Sigel werden in den Ordner "output" gelegt.

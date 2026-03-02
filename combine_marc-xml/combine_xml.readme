@@ -1,0 +1,14 @@
+#
+#  File         : combine_xml
+#  Description  : Combines all .xml files in "Input", output one ISO MARC file of all records
+#
+#
+#  Author(s)    : Melanie Janssen
+#  Creation     : 2023-11-28
+#
+#  History:
+#  2023-11-28   : MJa      : creation
+
+Erwartete eine oder mehrere Marc XML Dateien im Ordner "input" und erzeugt eine Marc ISO Datei im Ornder "output".
+
+Eine Nutzereingabe wird im Skript erwartet: Anpassung der Variable "filename" für den Dateinamen der Ausgabedatei.

@@ -1,0 +1,16 @@
+#
+#  File         : get_diff
+#  Description  : Do a diff between the file in "input" and the previous download in "prev" and output a MARC file.
+#
+#
+#  Author(s)    : Melanie Janssen
+#  Creation     : 2025-11-27
+#
+#  History:
+#  2025-11-27   : MJa      : creation
+
+Erwartete eine Marc Datei im Ordner "input" und eine Marc Datei im Ordner "prev".
+
+Erzeugt eine ID Liste aus der Datei in "prev" und gleicht sie gegen die Marc Datei in "input" ab.
+
+Die Marc Datensätze, die nur in der neuen Lieferung vorhanden sind werden in einer Ausgabedatei im Ordner "output" abgelegt.

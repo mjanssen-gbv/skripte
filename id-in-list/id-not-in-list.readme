@@ -1,0 +1,18 @@
+#
+#  File         : id_not_in_list
+#  Description  : Compare two lists of IDs, output a list of unique identifiers
+#
+#
+#  Author(s)    : Melanie Janssen
+#  Creation     : 2024-01-19
+#
+#  History:
+#  2024-01-19   : MJa      : creation
+
+Erwartete genau zwei Text (.txt) Dateien im Ordner "input".
+
+Zwei verpflichtende Nutzereingaben:
+* Dateiname der IDs aus der neuen Lieferung
+* Dateiname der IDs aus der alten Lieferung / dem E-Book Pool
+
+Erzeugt eine Liste der IDs, die nur in einer der Eingabelisten vorkommen und legt sie in den Ordner "output".
