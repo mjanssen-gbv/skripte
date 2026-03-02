@@ -2,7 +2,7 @@
 #
 #  File         : get_id_list-multi
 #  Description  : Collect ID from 001 fields of all .mrc files in Input, prompt user for praefix and prepend it, 
-#                 output a list of unique identifiers per file
+#                 output one list of unique identifiers per file
 #
 #
 #  Author(s)    : Melanie Janssen
