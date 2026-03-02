@@ -1,0 +1,9 @@
+
+# Quelle: https://metacpan.org/dist/Catmandu-MARC/view/lib/Catmandu/MARC/Tutorial.pod
+
+marc_map(001,id)
+ 
+lookup(id,'./input/input.copy')    # select only records with these ID numbers
+  
+select all_match(id,OK)
+

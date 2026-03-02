@@ -1,0 +1,17 @@
+#  File         : filter_id
+#  Description  : Check whether ID from .txt file in "Input" is in 001 fields of any of the .mrc files in "Input", 
+#                 output a MARC file of all records with these IDs
+#
+#
+#  Author(s)    : Melanie Janssen
+#  Creation     : 2023-11-??
+#
+#  History:
+#  2023-11-??   : MJa      : creation
+
+filter_id erwartet im Ordner "input" eine .txt Datei mit IDs aus MARC 001, sowie eine beliebige Anzahl an MARC Dateien (.mrc). 
+Im Ordner Output wird eine MARC Datei erzeugt, die alle Saetze mit passender 001 ID enthaelt.
+
+Je groesser die Anzahl der MARC Dateien und darin enthaltenen Records, desto laenger dauert die Verarbeitung. 
+Grundsaetzlich wird eine Datei mit 100 Records schneller durchlaufen als 4 Dateien mit 25 Records, 
+da die MARC Dateien nacheinander durchsucht werden.
