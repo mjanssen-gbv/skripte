@@ -11,8 +11,11 @@
 #  History:
 #  2026-02-06   : MJa      : creation
 #  2026-02-09   : MJa      : add no-prefix option
+#  2026-04-02   : MJa      : append date to filename
 
 clear
+
+datum=$(date +"%Y-%m-%d")
 
 # Praefix Variable leeren und Benutzer zur Eingabe auffordern
 echo "Welches Praefix haettens denn gern? (Eingabe 'n' wenn kein Praefix)"
@@ -42,13 +45,10 @@ do
     sed -i "s/^/$praefix/" ./output/$filename.txt
   fi
 
-  echo
+  # Tagesdatum an Dateinamen haengen
+  mv ./output/"${filename}.txt" ./output/"${filename}_${datum}.txt"
+
 done
-
-# echo "ID-Liste deduplizieren..."
-# sort -u ./output/ID-Liste.txt -o ./output/$praefix-ID-Liste_dedup.txt
-
-# rm ./output/ID-Liste.txt
 
 echo "###########################"
 echo "Fertig! ID-Listen liegen in Output"
